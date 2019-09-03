@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+
+{% block 'content' %}
+<div class="d-flex align-items-center h-75" >
+	<div class="container" style="display: none" id="write-form">
+		<h4 class="lead">What to write?</h4>
+		<form method="post" class="form-control bg-dark">
+		    {% csrf_token %}
+		    <div class="form-group mt-3">
+		    	{{ form }}
+		    </div>
+		    <div class="form-group d-flex justify-content-end">
+		    	<input type="submit" value="Write" class="btn btn-success">
+		    </div>
+		</form>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+body {
+	background-image: url('/static/images/bg-body.jpeg'); 
+	height: 100vh;
+}
+
+.main-text {
+	font-family: 'Hepta Slab', serif; 
+	text-decoration: underline;
+	display: none;
+}
+
+
+
+.navbar-mapper {
+	color: black;
+	font-family: 'Lexend Zetta', sans-serif;
+}
+
+.navbar-mapper:hover {
+	color: #3f4145;
+	text-shadow: 2px 2px;
+}
