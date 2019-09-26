@@ -20,3 +20,35 @@ body {
 	color: #3f4145;
 	text-shadow: 2px 2px;
 }
+
+.watch-container {
+	height: 70vh;
+	width: 100vw;
+}
+
+#vids-container {
+	width: 100%;
+}
+
+.inner-vids-container {
+	border-radius: 30px;
+	margin-top: 20px;
+}
+
+.inner-vids-container h1 {
+	font-family: 'Lexend Zetta', sans-serif;
+}
+
+.title-contianer {
+	height: 20%;
+}
+
+button {
+	width: 100px;
+	height: 37px;
+}
+
+iframe {
+	width: 100%;
+	height: 80%;
+}

@@ -25,6 +25,7 @@ urlpatterns = [
     path('', include('main.urls')),
     path('write/', include('write.urls')),
     path('read/', include('read.urls')),
+    path('watch/', include('watch.urls')),
     path('login/', views.login),
     path('loging-in/', views.loging_in)
 ] + static(settings.STATIC_URL)
