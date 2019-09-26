@@ -17,12 +17,15 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from write import views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
     path('write/', include('write.urls')),
-    path('read/', include('read.urls'))
+    path('read/', include('read.urls')),
+    path('login/', views.login),
+    path('loging-in/', views.loging_in)
 ] + static(settings.STATIC_URL)
 

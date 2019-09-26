@@ -1,10 +1,10 @@
 {% extends 'main/base.html' %}
 
-{% block 'content' %}
+{% block content %}
 <div class="d-flex align-items-center h-75" >
 	<div class="container" style="display: none" id="write-form">
 		<h4 class="lead">What to write?</h4>
-		<form method="post" class="form-control bg-dark">
+		<form method="post" class="form-control bg-dark" action="writing/">
 		    {% csrf_token %}
 		    <div class="form-group mt-3">
 		    	{{ form }}
