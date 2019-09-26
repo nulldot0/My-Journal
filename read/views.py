@@ -19,19 +19,7 @@ def read(request):
 			'latest': latest, 
 			'view_title': 'Recent'})
 	else:
-		return render(request, 'write/login.html')
-
-
-		# if request.method == 'POST':
-		# 	username = request.POST['username']
-		# 	password = request.POST['password']
-		# 	user = authenticate(request, username=username, password=password)
-		# 	if user is not None:
-		# 		login(request, user)
-		# 		return render(request, 'read/read.html')
-		# 	else:
-		# 		return render(request, 'write/login.html', {'error': 'User does not exist!'})
-		# return render(request, 'write/login.html')
+		return redirect('/login')
 
 def readMiniDay(request, id):
 	try:
