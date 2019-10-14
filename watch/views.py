@@ -13,7 +13,7 @@ def jsons(request):
 		x = False
 	if x:
 		query = request.GET['query']
-		api_key = 'AIzaSyCcgEDU-MitRkYaLc8uH80K7DGibC0N3Ys'
+		api_key = 'Your api key here'
 		youtube = build('youtube', 'v3', developerKey=api_key)
 		req = youtube.search().list(q=query, part='snippet', type='video')
 		res = req.execute()
